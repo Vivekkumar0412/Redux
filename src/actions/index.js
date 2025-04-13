@@ -1,6 +1,4 @@
 import axios from "axios";
-import { useDispatch } from "react-redux";
-// const dispatch = useDispatch();
 // account actions constants
 export const incAmt = "account/inc";
 export const decAmt = "account/dec";
@@ -30,7 +28,7 @@ export function accountGetByIdFun(id) {
   return async (dispatch, getState) => {
     try {
       dispatch(getAccByIdPendingFun());
-      let res = await axios.get(`http://localhost:8080/accounts/${id}`);
+      let res = await axios.get(`http://localhost:3000/accounts/${id}`);
       console.log(res, "res");
       dispatch(getAccByIdFullFill(res.data.amount));
     } catch (error) {

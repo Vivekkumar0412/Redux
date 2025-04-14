@@ -11,6 +11,7 @@ export const accountGetByIdRejected = "account/getById/rejected";
 export const incBonus = "bonus/inc";
 export const decBonus = "bonus/dec";
 export const incByBonus = "bonus/incByAmount";
+export const incByBonusTest = "bonus/incByAmount/test";
 
 // account action creaters
 export function incAmtFun() {

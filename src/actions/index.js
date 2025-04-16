@@ -19,6 +19,9 @@ export function incAmtFun() {
 export function decAmtFun() {
   return { type: decAmt };
 }
+export function decAmtByValFun() {
+  return { type: decAmt };
+}
 
 export function incByAmountFun(val) {
   return { type: incByAmount, payload: val };
